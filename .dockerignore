@@ -1,0 +1,34 @@
+# Ignore Python cache and VCS
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Virtual environments
+.env
+.venv
+venv/
+env/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Git
+.git
+.gitignore
+
+# Not needed in runtime image
+# Ignore all CSVs first...
+*.csv
+# ...then make an exception for the one we need for training.
+!Crop_recommendation.csv
+
+models/
+notebooks/
